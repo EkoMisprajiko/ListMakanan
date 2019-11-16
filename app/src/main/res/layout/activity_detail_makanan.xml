@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailMakanan">
+
+
+        <ImageView
+            android:id="@+id/iv_makanan_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher_background"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_nama_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_makanan_detail"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Nama Detail"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nama_detail"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:text="Deskripsi"
+            android:textSize="20dp"></TextView>
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/tv_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deskripsi"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:text="@string/deskripsi"></com.codesgood.views.JustifiedTextView>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_below="@+id/tv_deskripsi"
+            android:id="@+id/spinner_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </RelativeLayout>
+</ScrollView>
